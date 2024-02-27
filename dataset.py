@@ -308,7 +308,7 @@ class LINGOSpaceDataset(InMemoryDataset):
     
 
     def process_demo_info(self, dino_info, image=None, parsing=None, eval_fname=None, image_fname=None):
-        assert image is not None and parsing is None and eval_fname is not None and image_fname is None
+        assert image is not None and image_fname is None
         if parsing is not None:
             dino_info['parsing'] = parsing
 

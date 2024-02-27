@@ -48,7 +48,8 @@ class LINGOSpaceInference:
 
     @torch.no_grad()
     def run(self, dino_info, image=None, eval_fname=None, image_fname=None):
-        if eval_fname is None:
+        if eval_fname is None or not os.path.exists(eval_fname):
+            eval_fname = None
             parsing = gpt_parser.parse(dino_info['lang_goal'])
         else:
             parsing = None

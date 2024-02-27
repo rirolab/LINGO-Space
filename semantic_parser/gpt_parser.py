@@ -25,7 +25,7 @@ Output:
 """
 
 @timeout_decorator.timeout(240)
-def send_query(query, model="gpt-4-0314", temparature=0.2):
+def send_query(query, model="gpt-4", temparature=0.2): # model="gpt-4-0314"
     chat_completion = openai.ChatCompletion.create(
         model=model, messages=[{"role": "user", "content": query},],
         temperature=temparature)
