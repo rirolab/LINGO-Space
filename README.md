@@ -52,7 +52,10 @@ Usually, you can set `CUDA_HOME` as:
 export CUDA_HOME=/usr/local/cuda-11.7
 ```
 
-TODO: Downlaod LINGO-Space dataset:
+Downlaod LINGO-Space's dataset:
+```
+sh scripts/download_dataset.sh
+```
 
 
 ## Usage
