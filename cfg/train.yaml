@@ -1,0 +1,38 @@
+dataset:
+  type: composite
+  root: data/
+  n: 200
+  encoder: ViT-L/14 # CLIP model
+
+model:
+  dim_in: 768 # CLIP embedding dim
+  dim_h: 256
+  K: 4
+  num_layers: 2
+  num_heads: 2
+  act: leaky_relu
+  dropout: 0.2
+  attn_dropout: 0.2
+
+loss:
+  alpha: 0.002
+  beta: 4.0
+  use_gt_w: true
+
+optim:
+  lr: 5e-5
+  weight_decay: 0.01
+  clip_grad_norm: 1.0
+
+scheduler:
+  T_max: 10000
+  min_lr: 1e-6
+
+train:
+  device: cuda
+  ckpt_root: checkpoints/
+  max_epoch: 50
+
+wandb:
+  use: false
+  project: LINGO-Space
