@@ -1,11 +1,9 @@
-import os, pickle, tqdm, copy
+import os, pickle, tqdm
 from PIL import Image
 import numpy as np
 import torch
 import clip
 from torch_geometric.data import InMemoryDataset, Data
-from transformers import AutoModel, AutoImageProcessor, AutoTokenizer
-import omegaconf
 
 
 MAX_LENGTH = 77 # same as CLIP tokenizer

@@ -5,6 +5,7 @@
   <a href="https://lingo-space.github.io">Project Page</a> •
   <a href="https://arxiv.org/abs/2402.01183">Paper</a> •
   <a href="https://github.com/rirolab/LINGO-Space">Code</a> •
+  <a href="https://colab.research.google.com/drive/14Nl0sozJ3JpfwxkfwGk_0s8k8DOqTEVN?usp=sharing">Colab</a> •
   <a href="#bibtex">BibTex</a>
 </p>
 
@@ -59,7 +60,7 @@ sh scripts/download_dataset.sh
 
 
 ## Usage
-TODO: You can check our demo on [Colab]()!
+You can check our demo code on [Colab](https://colab.research.google.com/drive/14Nl0sozJ3JpfwxkfwGk_0s8k8DOqTEVN?usp=sharing)!
 
 ### Running the training code
 First, you need to set "OPENAI_API_KEY" to use the semantic parser:
