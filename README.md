@@ -131,10 +131,13 @@ We thank to open source repositories: [GraphGPS](https://github.com/rampasek/Gra
 
 ## BibTex
 ```
-@article{kim2024lingo,
+@inproceedings{kim2024lingo,
   title={LINGO-Space: Language-Conditioned Incremental Grounding for Space},
   author={Kim, Dohyun and Oh, Nayoung and Hwang, Deokmin and Park, Daehyung},
-  journal={arXiv preprint arXiv:2402.01183},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={9},
+  pages={10314--10322},
   year={2024}
 }
 ``` 
